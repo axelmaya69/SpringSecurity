@@ -4,6 +4,9 @@
  */
 package controllers;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  *
  * @author axelmaya
@@ -13,9 +16,9 @@ package controllers;
 public class CustomerController {
     
     
-    @GetMapping("/index"){
-    String saludo(){
+    @GetMapping("/index")
+    public String saludo(){
         return "Hola Mundo";
-    }
+    
 }
 }
