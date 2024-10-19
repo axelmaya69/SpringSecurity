@@ -8,6 +8,14 @@ package controllers;
  *
  * @author axelmaya
  */
+
+@RestController
 public class CustomerController {
     
+    
+    @GetMapping("/index"){
+    String saludo(){
+        return "Hola Mundo";
+    }
+}
 }
