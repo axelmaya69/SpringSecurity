@@ -18,7 +18,9 @@ public class SecurityConfig {
                         .anyRequest().authenticated()         // Proteger las demás rutas
                 )
                 .formLogin(login -> login.permitAll());    // Habilitar formulario de inicio de sesión
- 
+   
+        return http.build();
+    }
     }
 
 }
