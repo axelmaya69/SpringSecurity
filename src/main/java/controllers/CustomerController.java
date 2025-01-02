@@ -16,4 +16,10 @@ public class CustomerController {
         return "Hola Mundo";
     
 }
+
+@GetMapping("/saludo")
+    public String decir(){
+        return "Hola jeje";
+}
+
 }
