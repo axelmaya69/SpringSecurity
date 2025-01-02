@@ -14,7 +14,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/index").permitAll() // Permitir acceso público a /index
+                        .requestMatchers("/saludo","/index").permitAll() // Permitir acceso público a /index
                         .anyRequest().authenticated()         // Proteger las demás rutas
                 )
                 .formLogin(login -> login.permitAll());    // Habilitar formulario de inicio de sesión
