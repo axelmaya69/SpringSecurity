@@ -17,6 +17,8 @@ public class SecurityConfig {
                         .requestMatchers("/index").permitAll() // Permitir acceso público a /index
                         .anyRequest().authenticated()         // Proteger las demás rutas
                 )
-
+                .formLogin(login -> login.permitAll());    // Habilitar formulario de inicio de sesión
+ 
+    }
 
 }
